@@ -1,26 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-:root{
-    --amarillo: #EAC926;
-    --azul: #03264C;
-    --celeste: #1259c3;
-    --grisOscuro: #666;
-    --grisClaro: #ebebeb;
-    --verde: #39b54a;
-    --roboto: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+  --roboto: "Roboto", sans-serif;
 }
 
-.body{
-    font-family: var(--roboto)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.titulares{
-    font-size: 24px;
+header {
+  background-color: var(--amarillo);
 }
 
-.precios{
-    font-size: 18px;
+body {
+  font-family: var(--roboto);
+  font-size: 12px;
 }
 
-footer{
-    text-align: center;
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenedor-articulos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.flex-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.flex-contenedor h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.camion {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.banner {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+}
+.titulares {
+  font-size: 24px;
+  margin: 1rem 2rem;
+
+}
+
+.precios {
+  font-size: 18px;
+}
+
+.articulo {
+  margin-bottom: 10px;
+  width: 15rem;
+  height: 18rem;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  margin: 10px;
+}
+
+.articulo img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.articulo-box {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-margin {
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 16px;
+}
+
+.descuento {
+  font-size: 16px;
+}
+.logo {
+  width: 16rem;
+  height: 13rem;
+}
+.menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    background-color: var(--azul);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .articulo {
+    box-shadow: none;
+  }
+
+  .descripcion {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
 }
