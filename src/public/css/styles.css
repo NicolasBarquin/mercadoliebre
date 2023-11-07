@@ -120,7 +120,13 @@ main {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 0.3s;
 }
+
+.camion:hover {
+  transform: rotate(90deg);
+} 
+
 .banner {
   width: 100%;
   height: fit-content;
@@ -141,6 +147,21 @@ main {
   height: 18rem;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
   margin: 10px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.articulo:hover {
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.articulo .descripcion {
+  display: none; 
+}
+
+.articulo:hover .descripcion {
+  display: block; 
 }
 
 .articulo img {
@@ -154,9 +175,26 @@ main {
   position: relative;
 }
 
+.boton-envio {
+  background-color: #0077FF; 
+  color: #FFFFFF; 
+  padding: 10px 20px; 
+  transition: background-color 0.3s;
+}
+
+.boton-envio:hover {
+  background-color: #0022AA; 
+}
+
 footer {
   text-align: center;
   padding: 2rem 0;
+  color: #333; 
+  background-color: #fff; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-margin {
@@ -182,6 +220,37 @@ footer {
 }
 .menu {
   display: none;
+}
+
+form{
+  background-color: white; 
+  border: 1px solid var(--grisOscuro); /* Borde gris oscuro */
+  padding: 20px;
+  font-family: var(--roboto);
+}
+
+form input[type="text"],
+form textarea {
+  background-color: var(--grisClaro);
+  border: 1px solid var(--grisOscuro);
+  color: var(--grisOscuro); 
+  padding: 10px;
+  font-family: var(--roboto); 
+}
+
+form input[type="submit"],
+form button {
+  background-color: var(--azul); 
+  color: #fff; 
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer; 
+  font-family: var(--roboto); 
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: var(--amarillo); /* Cambia el color al pasar el mouse por encima al amarillo */
 }
 
 @media (max-width: 767px) {
