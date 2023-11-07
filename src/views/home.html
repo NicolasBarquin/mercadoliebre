@@ -17,32 +17,55 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Mercado Liebre</title>
   </head>
   <body>
-    <header>
-      <img src="/img/logo-mercado-liebre.svg" alt="logo" class="logo" />
-      <input type="text" placeholder="Busca tus productos" /><i
-        class="fa-solid fa-magnifying-glass"
-        style="color: #010104"
-      ></i>
-      <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
-      <i class="fa-solid fa-hand-holding-dollar" style="color: #01060e"></i>
+    <header class="header-barras">
+      <div class="barra-top">
+        <img src="/img/logo-mercado-liebre.svg" alt="logo" class="logo" />
+        <div class="barra-busqueda">
+          <input type="text" placeholder="Busca tus productos" /><i
+            class="fa-solid fa-magnifying-glass"
+            style="color: #010104"
+          ></i>
+        </div>
+        <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+        <i class="fa-solid fa-hand-holding-dollar" style="color: #01060e"></i>
+      </div>
+      <div class="barra-bottom">
+        <div>
+          <ul class="links">
+            <li>Ofertas</li>
+            <li>Tiendas Oficiales</li>
+            <li>Vender</li>
+            <li>Ayuda</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="links">
+            <li>
+              <a href="/register"
+                >Crea tu cuenta   <i
+                  class="fa-solid fa-address-card"
+                  style="color: #010409"
+                ></i
+              ></a>
+            </li>
 
-      <ul class="links">
-        <li>Ofertas</li>
-        <li>Tiendas Oficiales</li>
-        <li>Vender</li>
-        <li>Ayuda</li>
-      </ul>
-      <ul class="links">
-        <li>Crea tu cuenta</li>
-        <i class="fa-solid fa-address-card" style="color: #010409"></i>
-        <li>Ingresa</li>
-        <i class="fa-solid fa-right-to-bracket" style="color: #00040a"></i>
-        <li>Mis compras</li>
-        <i class="fa-solid fa-basket-shopping" style="color: #010409"></i>
-      </ul>
+            <li>
+              <a href="/login"
+                >Ingresa   <i
+                  class="fa-solid fa-right-to-bracket"
+                  style="color: #00040a"
+                ></i
+              ></a>
+            </li>
+
+            <li>Mis compras</li>
+            <i class="fa-solid fa-basket-shopping" style="color: #010409"></i>
+          </ul>
+        </div>
+      </div>
       <div class="burger-menu menu">
         <i class="fas fa-bars" style="color: #fff"></i>
       </div>

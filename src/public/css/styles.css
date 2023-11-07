@@ -15,8 +15,66 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
 header {
   background-color: var(--amarillo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-barras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem 2rem 3rem;
+}
+
+.barra-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.barra-busqueda {
+  flex: 1;
+  text-align: center;
+}
+
+.barra-busqueda input {
+  width: 50%;
+  padding: 5px;
+}
+
+.barra-bottom {
+  display: flex;
+  flex-wrap: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
 }
 
 body {
@@ -29,7 +87,7 @@ main {
   margin: 0 auto;
 }
 
-.contenedor-articulos{
+.contenedor-articulos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -71,7 +129,6 @@ main {
 .titulares {
   font-size: 24px;
   margin: 1rem 2rem;
-
 }
 
 .precios {
@@ -116,6 +173,12 @@ footer {
 .logo {
   width: 16rem;
   height: 13rem;
+  flex: 1;
+  text-align: center;
+}
+.logo img {
+  width: 50%;
+  height: auto;
 }
 .menu {
   display: none;
